@@ -10,9 +10,7 @@ class Memory {
     if (this.head + size > this.memory.length) {
       return null;
     }
-
     let start = this.head;
-
     this.head += size;
     return start;
   }
@@ -23,13 +21,13 @@ class Memory {
     if (fromIdx === toIdx) {
       return;
     }
-
     if (fromIdx > toIdx) {
       // Iterate forwards
       for (let i = 0; i < size; i++) {
         this.set(toIdx + i, this.get(fromIdx + i));
       }
-    } else {
+    }
+    else {
       // Iterate backwards
       for (let i = size - 1; i >= 0; i--) {
         this.set(toIdx + i, this.get(fromIdx + i));
