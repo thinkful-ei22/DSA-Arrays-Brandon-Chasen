@@ -87,16 +87,16 @@ function main(){
 
   ///2.What is the length, capacity and memory address of your array? Explain the result of your program after adding the new lines of code
 
-  arr.pop();
-  arr.pop();
-  arr.pop();
+  // arr.pop();
+  // arr.pop();
+  // arr.pop();
 
   ///3.What is the length, capacity and address of your array? Explain the result of your program after adding the new lines of code
 
   // Print the first item in the array arr.
-
+  console.log(arr.get(0));
   // Empty the array and add just one item 
-  arr.push("tauhida");
+  // arr.push("tauhida");
   
   // 4. Print this one item that you just added. What is the result? Can you explain your result?
   
