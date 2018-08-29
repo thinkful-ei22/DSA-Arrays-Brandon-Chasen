@@ -179,8 +179,8 @@ class Array{
     for (let i=0; i<array.length; i++){
       for (let j=0; j<array[i].length; j++){
         if (array[i][j] === 0){
-          rows[i] = true;
-          columns[j] = true;
+          rows[i] = 0;
+          columns[j] = 0;
         }
       }
     }
@@ -188,7 +188,7 @@ class Array{
     for (let i=0; i < array.length; i++){
       for (let j=0; j < array[i].length; j++){
 
-        if (rows[i] || columns[j]){
+        if (rows[i] === 0 || columns[j]===0 ){
           array[i][j] = 0;
         }
       }
@@ -218,13 +218,13 @@ function main(){
   ///1.What is the length, capacity and memory address of your array?
 
   //add an item to the array
-  arr.push(3);
-  arr.push(5);
-  arr.push(15);
-  arr.push(19);
-  arr.push(45);
-  arr.push(10);
-  arr.push(2);
+  // arr.push(3);
+  // arr.push(5);
+  // arr.push(15);
+  // arr.push(19);
+  // arr.push(45);
+  // arr.push(10);
+  // arr.push(2);
 
   ///2.What is the length, capacity and memory address of your array? Explain the result of your program after adding the new lines of code
 
